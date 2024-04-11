@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: cats
+      POSTGRES_USER: glenn
+      POSTGRES_PASSWORD: TundraxPassword
+    ports:
+      - "5432:5432"
